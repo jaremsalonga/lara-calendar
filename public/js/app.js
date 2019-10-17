@@ -2365,6 +2365,7 @@ var stylings = {
   mounted: function mounted() {
     var _this = this;
 
+    this.$refs.calendar.checkChange();
     this.loading = true;
     axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('api/fetchEvent').then(function (response) {
       var _this$events;

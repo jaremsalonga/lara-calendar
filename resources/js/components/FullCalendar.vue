@@ -318,6 +318,7 @@ export default {
     },
   },
   mounted () {
+    this.$refs.calendar.checkChange()
     this.loading = true;
     axios.get('api/fetchEvent').then((response) => {
         this.events.push(...response.data)
