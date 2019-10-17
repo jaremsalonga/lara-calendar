@@ -26,7 +26,7 @@
           <template v-slot:activator="{ on }">
             <v-text-field
               v-model="startDate"
-              label="Start Date"
+              label="From"
               append-icon="event"
               readonly
               v-on="on"
@@ -50,7 +50,7 @@
           <template v-slot:activator="{ on }">
             <v-text-field
               v-model="endDate"
-              label="End Date"
+              label="To"
               append-icon="event"
               readonly
               v-on="on"

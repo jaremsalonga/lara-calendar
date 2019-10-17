@@ -22226,7 +22226,7 @@ var render = function() {
                             _vm._g(
                               {
                                 attrs: {
-                                  label: "Start Date",
+                                  label: "From",
                                   "append-icon": "event",
                                   readonly: ""
                                 },
@@ -22332,7 +22332,7 @@ var render = function() {
                             _vm._g(
                               {
                                 attrs: {
-                                  label: "End Date",
+                                  label: "To",
                                   "append-icon": "event",
                                   readonly: ""
                                 },
