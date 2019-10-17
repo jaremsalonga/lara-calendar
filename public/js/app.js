@@ -2428,7 +2428,7 @@ var stylings = {
         for (var _iterator = range.by('day')[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
           var day = _step.value;
 
-          if (this.selected[day.format('d')]) {
+          if (this.selected.includes(Number(day.format('d')))) {
             localCopy.push({
               name: this.eventName,
               start: day.format('YYYY-MM-DD'),

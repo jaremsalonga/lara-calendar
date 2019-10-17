@@ -340,7 +340,7 @@ export default {
         let range = moment.range(start, end);
         let localCopy = [];
         for (let day of range.by('day')) {
-            if(this.selected[day.format('d')]) {
+            if(this.selected.includes(Number(day.format('d')))) {
                 localCopy.push({
                     name: this.eventName,
                     start: day.format('YYYY-MM-DD'),
